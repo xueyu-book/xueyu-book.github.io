@@ -4,6 +4,7 @@ const navConfig = require('./baseConfig/navConfig')
 module.exports = {
   title: "鳕鱼笔记本",
   description: '记录日常学习',
+  base: '/',
   head: [
     ['link', {rel: 'shortcut icon', href: '/favicon.ico'}]
   ],
