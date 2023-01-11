@@ -126,4 +126,4 @@ foo.bind(a)() // => 'yck'
 
 如果你还是觉得有点绕，那么就看以下的这张流程图吧，图中的流程只针对于单个规则。
 
-![](/img/base-js/about-this.png)
+![](/assets/docs/base-js/about-this.png)

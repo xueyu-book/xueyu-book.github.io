@@ -30,4 +30,4 @@ tips: 一个Event Loop有一个或多个任务队列，每个任务队列有一�
 
 ## 图示
 
-![](/img/daily-qa/event-loop.png)
+![](/assets/docs/daily-qa/event-loop.png)
