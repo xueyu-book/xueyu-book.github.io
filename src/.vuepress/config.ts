@@ -1,18 +1,16 @@
-import { defineUserConfig } from "vuepress";
-import theme from "./theme.js";
+import { defineUserConfig } from 'vuepress'
+import theme from './theme.js'
+
+import { getDirname, path } from "@vuepress/utils";
+
+// @ts-ignore
+const __dirname = getDirname(import.meta.url);
 
 export default defineUserConfig({
-  base: "/",
-
-  locales: {
-    "/docs/": {
-      lang: "zh-CN",
-      title: "文档演示",
-      description: "vuepress-theme-hope 的文档演示",
-    },
-  },
-
+  base: '/',
   theme,
-
   shouldPrefetch: false,
+  alias: {
+    "@xyCalendar": path.resolve(__dirname, "components/calendar/index.vue"),
+  },
 });
