@@ -1,1 +1,0 @@
-import{_ as t,V as a,W as c,Z as e,$ as n}from"./framework-afccc25a.js";const o={},r=e("h1",{id:"函数",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#函数","aria-hidden":"true"},"#"),n(" 函数")],-1),s=[r];function _(d,i){return a(),c("div",null,s)}const h=t(o,[["render",_],["__file","function.html.vue"]]);export{h as default};
