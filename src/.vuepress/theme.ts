@@ -1,36 +1,36 @@
-import { hopeTheme } from "vuepress-theme-hope";
-import { zhNavbar } from "./navbar/index.js";
-import { zhSidebar } from "./sidebar/index.js";
+import { hopeTheme } from 'vuepress-theme-hope'
+import { zhNavbar } from './navbar/index.js'
+import { zhSidebar } from './sidebar/index.js'
 
 export default hopeTheme({
-  hostname: "https://xueyu-book.github.io",
+  darkmode: 'switch',
+  hostname: 'https://xueyu-book.github.io',
 
   author: {
-    name: "鱼羹",
-    url: "https://xueyu-book.github.io",
+    name: '鱼羹',
+    url: 'https://xueyu-book.github.io'
   },
 
-  iconAssets: "iconfont",
+  iconAssets: 'iconfont',
 
-  logo: "/logo.svg",
+  logo: '/logo.svg',
 
-  repo: "xueyu-book",
+  repo: 'xueyu-book',
 
-  docsDir: "demo/theme-docs/src",
+  docsDir: 'demo/theme-docs/src',
 
   locales: {
-    "/": {
+    '/': {
       navbar: zhNavbar,
-
       sidebar: zhSidebar,
       editLink: false
-    },
+    }
   },
 
   encrypt: {
     config: {
-      "/demo/encrypt.html": ["1234"],
-    },
+      '/demo/encrypt.html': ['1234']
+    }
   },
 
   plugins: {
@@ -84,30 +84,30 @@ export default hopeTheme({
       mark: true,
       mermaid: true,
       playground: {
-        presets: ["ts", "vue"],
+        presets: ['ts', 'vue']
       },
       presentation: {
-        plugins: ["highlight", "math", "search", "notes", "zoom"],
+        plugins: ['highlight', 'math', 'search', 'notes', 'zoom']
       },
       stylize: [
         {
-          matcher: "Recommended",
+          matcher: 'Recommended',
           replacer: ({ tag }) => {
-            if (tag === "em")
+            if (tag === 'em')
               return {
-                tag: "Badge",
-                attrs: { type: "tip" },
-                content: "Recommended",
-              };
-          },
-        },
+                tag: 'Badge',
+                attrs: { type: 'tip' },
+                content: 'Recommended'
+              }
+          }
+        }
       ],
       sub: true,
       sup: true,
       tabs: true,
       vPre: true,
-      vuePlayground: true,
-    },
+      vuePlayground: true
+    }
 
     // uncomment these if you want a pwa
     // pwa: {
@@ -165,5 +165,5 @@ export default hopeTheme({
     //     ],
     //   },
     // },
-  },
-});
+  }
+})
